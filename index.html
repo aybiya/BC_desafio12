@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Favicon -->
+  <link rel="sshortcut icon" href="img/favicon.svg">
+  
+  <meta name="authors" content="Aybi YAñez" />
+  <meta name="copyright" content="Ref. to author | todos los derechos reservados" />
+  <meta name="description"
+    content="Desafío 12: crear una lista de contactos" />
+
+  <!-- links externos -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/normalize.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+  
+  <title>Contactos</title>
+</head>
+<!-- fin head -->
+<body>
+  <!-- inicia form agregar contacto -->
+  <section id="contact-form" class="container">
+    <h1>Agregar Contacto</h1>
+    <form>
+      <article>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" placeholder="Nombre" required>
+      </article>
+      <article>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Email" required>
+      </article>
+      <article>
+        <label for="birthdate">Fecha de Nacimiento:</label>
+        <input type="date" id="birthdate" required>
+      </article>
+      <button id="add-btn" type="button">Agregar</button>
+    </form>
+    <!-- msgs -->
+    <article class="msgs">
+      <div id="error-message" style="display: none;"></div>
+      <div id="confirm-message" style="display: none;"></div>
+    </article>
+  </section>
+  <!-- fin form agregar contacto -->
+  <!-- comienza form editar contactos -->
+  <section>
+    <div id="edit-container">
+    </div>
+  </section>
+  <!-- fin form editar contactos -->
+  <!-- comienza lista de contactos -->
+  <section class="container">
+    <h2>Lista de Contactos</h2>
+    <div id="contacts-list">
+    </div>
+  </section>
+  <!-- fin lista de contactos -->
+
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+  <script defer src="main.js"></script>
+</body>
+<!-- fin body -->
+</html>
