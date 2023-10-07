@@ -1,0 +1,15 @@
+// Declaraciones globales
+
+// Botón
+@mixin Button ( $fontSize, $fontWeight, $color, $backgroundColor, $borderRadius, $border, $boxShadow, $padding : false ) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $color;
+    background-color: $backgroundColor;
+    border-radius: $borderRadius;
+    border: $border;
+    box-shadow: $boxShadow;
+    @if $padding{
+        padding: $padding;
+    };
+}

@@ -1,0 +1,157 @@
+/* // body */
+
+@use './h-fonts' as F;
+@use './h-colors' as C;
+@use './mixin.scss' as M;
+
+body{
+    /* // Contenedor form contacto */
+    .container{
+        background-color: C.$bgColor;
+        border-radius: 30px;
+        box-shadow: 2px 2px 20px 0.5px rgba(0, 0, 0, 0.296);
+        padding-bottom: 1.5rem;
+
+         /* // Msjs al editar contacto */
+       #edit-contact-form{
+        .msgs{
+            font-family: F.$secondaryFont;
+            font-size: 15px;
+            font-weight: F.$textLight;
+            text-align: center;
+            padding-bottom: 0;
+    
+            #edit-error-message{
+                color: red;
+            }
+            #edit-confirm-message{
+                color: green;
+            }
+        }
+       } 
+        h1, h2{
+            text-align: center;
+            padding: 1rem 0 0.5rem 0;
+            color: C.$secondaryColor;
+        } 
+        /* // Formulario de contacto */
+        form {
+            font-weight: F.$textRegular;
+            padding: 1.5rem 2rem;
+            margin: 0 2.5rem 2rem 2.5rem;
+            border-radius: 20px;
+            background-color: C.$bgFormColor;
+            display: flex;
+            flex-direction: column;
+
+            article{
+                padding-bottom: 0.6rem;
+
+                label{
+                    font-weight: F.$textBold;
+                    font-size: F.$textMd;
+                }
+
+                input{
+                    font-family: F.$secondaryFont;
+                    color: C.$btnColor;
+                    background-color: C.$inputColor;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 0.2rem 0.5rem 0.2rem 0.8rem;
+    
+                }
+            }
+
+            button{
+                font-size: F.$textSm;
+                font-weight: F.$textRegular;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 10px;
+                padding: 0.5rem 0.8rem;
+                margin: 1.5rem 9rem 0.5rem 9rem;
+                background-color: C.$secondaryColor;
+                box-shadow: 2px 2px 20px 0.5px rgba(0, 0, 0, 0.164);
+                
+            }
+            button:hover{
+                cursor: pointer;
+                background-color: C.$btnColor;
+            }
+
+        } 
+
+        /* // Msjs al crear contacto */
+        .msgs{
+            font-family: F.$secondaryFont;
+            font-size: 15px;
+            font-weight: F.$textLight;
+            text-align: center;
+            padding-bottom: 0;
+    
+            #error-message{
+                color: red;
+            }
+            #confirm-message{
+                color: green;
+            }
+        }
+        /* // Contenedor lista de contactos */
+        #contacts-list{
+            padding: 1rem 2rem;
+            margin: 0 2.5rem 2rem 2.5rem;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .contacts{
+                padding: 2rem 4rem;
+                margin-bottom: 2rem;
+                border-radius: 20px;
+                background-color: C.$bgFormColor;
+
+                article{
+                    display: flex;
+
+                    .category{
+                        padding-right: 0.5rem;
+                        font-family: F.$secondaryFont;
+                        font-weight: F.$textBold;
+    
+                    }
+                    p{
+                        font-family: F.$mainFont;
+                    }
+                }
+            }
+
+            button{
+                font-size: F.$textSm;
+                font-weight: F.$textRegular;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 10px;
+                padding: 0.5rem 0.8rem;
+                background-color: C.$secondaryColor;
+                box-shadow: 2px 2px 20px 0.5px rgba(0, 0, 0, 0.164);
+                margin: 0.5rem 1rem;
+                
+            }
+            button:hover{
+                cursor: pointer;
+                background-color: C.$btnColor;
+            }
+
+            .delete-btn{
+                background-color: #BF1F2C;
+            }
+            .delete-btn:hover{
+                background-color: #7F151D;
+            }
+        }
+        
+    }
+}

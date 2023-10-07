@@ -1,0 +1,2 @@
+html{font-family:"Roboto Slab",serif;font-size:16px;font-weight:400;line-height:1.7;color:#fff;margin:1.2rem;display:grid;place-items:center}body{border-radius:20px;box-shadow:2px 2px 20px .5px rgba(0,0,0,.296);padding-bottom:1.5rem}body.calculator{background-color:#3f3f40}body.calculator header{font-family:"Roboto Mono",monospace;font-size:1.4rem;font-weight:500;color:#3f3f40;background-color:#bdbebf}body.calculator main{font-size:1rem;font-weight:400;display:grid;grid-template-columns:repeat(4, 1fr)}
+/*# sourceMappingURL=styles.sass.min.css.map */
