@@ -1,0 +1,36 @@
+DESAFÍO 12 - INSTRUCCIONES
+
+En este caso, crear una aplicación que permita a los usuarios crear y editar una lista de contactos. Cada contacto debe tener un nombre, un email y una fecha de nacimiento. El usuario debe poder agregar y eliminar contactos, así como también actualizar la información asociada a cada contacto.
+
+Los datos de entrada serán los siguientes:
+* Nombre del contacto
+* Email del contacto
+* Fecha de nacimiento del contacto
+* Acción a realizar (agregar, actualizar o eliminar)
+* ID del contacto (para actualizar o eliminar un contacto)
+
+Los datos de salida serán:
+* Lista de contactos existentes
+* Mensajes de confirmación de operaciones exitosas
+
+Requerimientos funcionales:
+* Agregar un nuevo contacto con su respectivo nombre, email y fecha de nacimiento.
+* Actualizar la información asociada a un contacto existente.
+* Eliminar un contacto existente.
+* Mostrar una lista de todos los contactos existentes.
+* Validar que los campos obligatorios estén completos antes de agregar o actualizar un contacto.
+
+Requerimientos no funcionales:
+* La aplicación debe ser fácil de usar e intuitiva para el usuario.
+* La aplicación debe ser responsive para adaptarse a distintos tamaños de pantalla.(OPCIONAL)
+* Se pueden utilizar peticiones asincrónicas con XMLHttpRequest para realizar las operaciones con el servidor como también se puede utilizar Fetch. Adicionalmente, en caso de que deseen practicar lo visto en la clase del viernes 15/09, pueden usar la plataforma Firebase.
+
+Pasos para resolver el ejercicio:
+1.Crear un formulario para agregar o actualizar un contacto, con campos para el nombre, el email y la fecha de nacimiento.
+2.Agregar una lista de contactos existentes y un botón para eliminar cada uno de ellos.
+3.Al cargar la página, cargar la lista de contactos existentes y mostrarla en la página.
+4.Validar que los campos obligatorios estén completos antes de permitir agregar o actualizar un contacto.
+5.Utilizar peticiones asincrónicas con XMLHttpRequest para realizar las operaciones con el servidor.
+6.Al agregar o actualizar un contacto, enviar los datos al servidor para que se almacenen en una base de datos.
+7.Al eliminar un contacto, enviar el ID del contacto al servidor para que se elimine de la base de datos.
+8.Al agregar, actualizar o eliminar un contacto, actualizar la lista de contactos existentes mostrada en la página.

@@ -1,0 +1,20 @@
+{
+  "name": "12_desafio",
+  "version": "1.0.0",
+  "description": "Desafío 12 BC",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass",
+    "watch": "sass --watch sass/styles.sass:./styles/styles.css --no-source-map --no-indented"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aybiya/BC_desafio12.git"
+  },
+  "author": "Aybí Yañez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aybiya/BC_desafio12/issues"
+  },
+  "homepage": "https://github.com/aybiya/BC_desafio12#readme"
+}
